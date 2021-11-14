@@ -7,9 +7,9 @@ const  Movies = (props) => {
   return (
     <>
         <h4>Результаты по поиску: {searchTitle}</h4>
-    <ul className='movies-list'>
+          <ul className='movies-list'>
         {movies.length ? (movies.map(movie => {
-          return <Movie key={movie.imdbID} {...movie} onSelectedMovie={onSelectedMovie} />})) :
+          return <Movie key={`${movie.imdbID}_${movie.Title}`} {...movie} onSelectedMovie={onSelectedMovie} />})) :
           <h3>Фильм с таким названием не существует</h3>
         }
     </ul>
