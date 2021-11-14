@@ -10,10 +10,10 @@ class ImdbService {
   }
 
   getAllMovies(name) {
-    return this.getResourse(`http://www.omdbapi.com/?apikey=5bec7959&s=${name}`)
+    return this.getResourse(`https://www.omdbapi.com/?apikey=5bec7959&s=${name}`)
   }
   getMovie(id) {
-    return this.getResourse(`http://www.omdbapi.com/?apikey=5bec7959&i=${id}`)
+    return this.getResourse(`https://www.omdbapi.com/?apikey=5bec7959&i=${id}`)
   }
 }
 
